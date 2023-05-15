@@ -1,9 +1,11 @@
+import Navbar from "@/Components/Navbar"
+import Home from "./home"
 
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <main className={""}>
-      sdfghjklkmnbvcxghjklkvcx
+     Landing Page
     </main>
   )
 }
