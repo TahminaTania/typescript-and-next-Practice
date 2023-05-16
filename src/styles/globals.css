@@ -2,10 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-@layer components{
-  .NavHover{
-      @apply cursor-pointer rounded-full px-5 py-2 bg-[#f7af24]
+@layer components {
+  .NavHover {
+    @apply cursor-pointer rounded-full px-5 py-2 bg-[#f7af24];
   }
 }

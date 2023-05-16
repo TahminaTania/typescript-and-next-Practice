@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { FC, useState } from 'react'
 import {AiOutlineMenu,AiOutlineClose} from 'react-icons/ai';
 import NavMenu from './NavMenu';
-import Link from 'next/link';
+
+
 
 export default function Navbar() {
 
