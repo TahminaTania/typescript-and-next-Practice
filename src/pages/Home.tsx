@@ -1,9 +1,12 @@
 import React from 'react'
 
+
+
+
 export default function Home() {
   return (
    <section>
-    <div className='container mx-auto pb-10  md:py-[135px] '>
+    <div className='container mx-auto pb-10  md:py-[105px] '>
       <div className='grid  grid-cols-1 md:grid-cols-2 font-sarif bg-gray-50 '>
             <div className='col-span-1 py-[100px] md:py-10 pr-10 md:text-start text-center'>
                 <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Hello.</span></h6>

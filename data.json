@@ -1,0 +1,61 @@
+
+{
+    "experince": [
+        {
+            "id": 1,
+            "title":"Creative Director",
+            "time": "Jan 2021 - Present",
+            "company": "pxdraft Ltd, UK"
+        },
+        {
+            "id": 2,
+            "title":"Creative Director",
+            "time": "Jan 2021 - Present",
+            "company": "pxdraft Ltd, UK"
+        },
+        {
+            "id": 3,
+            "title":"Creative Director",
+            "time": "Jan 2021 - Present",
+            "company": "pxdraft Ltd, UK"
+        },
+        {
+            "id": 4,
+            "title":"Creative Director",
+            "time": "Jan 2021 - Present",
+            "company": "pxdraft Ltd, UK"
+        }
+    ],
+    "Skills": [
+        {
+            "id": 1,
+            "title":"Html",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 2,
+            "title":"Css",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 2,
+            "title":"ReactJS",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 4,
+            "title":"NextJS",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 5,
+            "title":"iOS App",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 6,
+            "title":"App Dev",
+            "icon": "AiFillHtml5"
+        }
+    ]
+}

@@ -12,7 +12,7 @@ export default function Navbar() {
   
 
   return (
-    <section>
+    <section className='sticky top-0 z-50'>
     <div className='bg-white border-b-2 border-[#18171c] py-6'>
       <div className="md:grid md:grid-cols-4 hidden">
         <div className="mx-auto my-auto text-2xl">BOSTON</div>

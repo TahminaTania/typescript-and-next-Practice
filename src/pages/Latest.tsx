@@ -1,27 +1,15 @@
-import {AiOutlineMobile} from 'react-icons/ai'
+import React from 'react'
 
-
-interface IndexProps{
-    data:{
-        userId:number;
-        id:number;
-        title:string;
-        body:string
-    }[];
-  }
-
-
-
-export default function Services({data}:IndexProps) {
-   
+export default function Latest() {
   return (
     <section className='py-[80px] bg-orange-50'>
         <div className='container  mx-auto md:px-[150px]'>
             <div className='font-[Rubik] tracking-widest md:text-start text-center'>
-                <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Services.</span></h6>
-                <h1 className='md:text-[70px] text-[50px] mb-[25px] leading-tight font-semibold text-[#18171c]'>Services I Offer</h1>
+                <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Portfolio.</span></h6>
+                <h1 className='md:text-[70px] text-[50px] mb-[25px] leading-tight font-semibold text-[#18171c]'>Latest Project</h1>
             </div>
-            <div className='grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 gap-7 my-4 '>
+            
+            {/* <div className='grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 gap-7 my-4 '>
                 {data?.map((item,index)=>{
                     return(
                         <div key={index} className=''>
@@ -36,10 +24,11 @@ export default function Services({data}:IndexProps) {
                         </div>
                         )
                     })}
-                
-            </div>
+            </div> */}
 
         </div>
     </section>
   )
 }
+
+
