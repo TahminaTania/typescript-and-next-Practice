@@ -8,6 +8,7 @@ import Latest from "./Latest"
 
 import fsPromises from 'fs/promises';
 import path from 'path'
+import Contact from "./Contact";
 
 
 
@@ -19,7 +20,8 @@ export default function LandingPage({data,objectData}:IndexProps) {
      <Home/>
      <Services data={data}/>
      <Skill experiences={experiences} skill={skill}/>
-     <Latest/>
+     <Latest skill={skill}/>
+     <Contact/>
     </main>
   )
 }
@@ -33,6 +35,7 @@ interface IndexProps{
         title:string;
         body:string
     }[];
+    objectData:any
   }
 
 
@@ -44,10 +47,10 @@ export const getServerSideProps:GetServerSideProps=async ()=>{
     
     const filePath = path.join(process.cwd(), 'data.json');
     const jsonData = await fsPromises.readFile(filePath);
-    const objectData = JSON.parse(jsonData);
+    const objectData = JSON.parse(jsonData.toString());
 
     return { 
-        props: {data},
-        props: {objectData}  };
+        props: {data,objectData},
+         };
   }
    

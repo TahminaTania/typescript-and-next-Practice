@@ -1,7 +1,7 @@
 import {AiOutlineMobile} from 'react-icons/ai'
 
 
-interface IndexProps{
+interface Props{
     data:{
         userId:number;
         id:number;
@@ -12,7 +12,7 @@ interface IndexProps{
 
 
 
-export default function Services({data}:IndexProps) {
+export default function Services({data}:Props) {
    
   return (
     <section className='py-[80px] bg-orange-50'>
