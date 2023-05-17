@@ -1,4 +1,4 @@
-import Form from '@/components/Form'
+// import Form from '@/components/Form'
 import {AiFillMail,AiFillPhone} from 'react-icons/ai'
 import {IoLocationSharp} from 'react-icons/io5'
 
