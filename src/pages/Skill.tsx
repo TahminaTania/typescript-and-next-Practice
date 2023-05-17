@@ -18,7 +18,7 @@ interface IndexProps{
 function Skill({experiences,skill}:IndexProps) {
     
   return (
-    <section>
+    <section id="SKill">
         <div className='container mx-auto py-[100px] md:px-[50px]'>
             <div className='grid md:grid-cols-2 grid-cols-1'>
                 <div>

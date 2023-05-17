@@ -14,8 +14,8 @@ interface Props {
 export default function NavMenu({param,title,Active,setActive}:Props) {
  
   return (
-    <div onClick={(e)=>setActive(param)}>
-      <Link href="" className={`${title===Active && "NavHover"}`} scroll={false}>{title}</Link>
+    <div onClick={(e)=>setActive(title)} className="">
+      <Link href={param}  className={`${title===Active && "NavHover"}`} scroll={false}>{title}</Link>
     </div>
 
   )

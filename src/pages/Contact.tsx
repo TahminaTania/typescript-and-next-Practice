@@ -1,16 +1,16 @@
-// import Form from '@/components/Form'
+import Form from '@/components/Form'
 import {AiFillMail,AiFillPhone} from 'react-icons/ai'
 import {IoLocationSharp} from 'react-icons/io5'
 
 export default function Contact() {
   return (
-    <section className='bg-gray-50'>
+    <section className='bg-gray-50' id='Contact'>
         <div className='container mx-auto pb-10  md:py-[105px] '>
         <div className='grid  grid-cols-1 md:grid-cols-2 font-sarif items-center'>
                 <div className='col-span-1 py-[100px] md:py-10 pr-10 md:text-start text-center'>
                     <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Contact.</span></h6>
                     <h1 className=' inline md:text-[55px] leading-tight text-[43px] pb-[p5px] font-[800] text-[#18171c]'>Let's Discuss Project</h1>
-                   {/* <div className='py-10'><Form/></div> */}
+                   <div className='py-10'><Form/></div>
                 </div>
 
                 <div className='mx-auto'>

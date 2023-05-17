@@ -14,16 +14,16 @@ export default function Navbar() {
   return (
     <section className='sticky top-0 z-50'>
     <div className='bg-white border-b-2 border-[#18171c] py-6'>
-      <div className="md:grid md:grid-cols-4 hidden">
-        <div className="mx-auto my-auto text-2xl">BOSTON</div>
-        <div className=" col-span-2 flex items-center justify-between left-0 uppercase text-md" >
-                <NavMenu title="Home" param="Home"  Active={Active} setActive={setActive}/>
-                <NavMenu title="Services" param="Services"  Active={Active} setActive={setActive}/>
-                <NavMenu title="SKill" param="SKill"  Active={Active} setActive={setActive}/>
-                <NavMenu title="Protfolio" param="Protfolio"  Active={Active} setActive={setActive} />
-                <NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive}/>
+      <div className="md:middleContainer hidden">
+        <div className="flex items-center gap-10 left-0 uppercase text-md" >
+                <div className="text-2xl">BOSTON</div>
+                <NavMenu title="Home" param="#Home"  Active={Active} setActive={setActive}/>
+                <NavMenu title="Services" param="#Services"  Active={Active} setActive={setActive}/>
+                <NavMenu title="SKill" param="#SKill"  Active={Active} setActive={setActive}/>
+                <NavMenu title="Protfolio" param="#Protfolio"  Active={Active} setActive={setActive} />
+                <NavMenu title="Contact" param="#Contact"  Active={Active} setActive={setActive}/>
         </div>
-        <div className="flex justify-center">
+        <div className="">
           <button className="text-[#18171c] bg-[#f7af24] py-[12px] px-[28px] text-[16px] border-2 border-[#18171c] font-bold">Contact Now</button>
         </div>
       </div>
