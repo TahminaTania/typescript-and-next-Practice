@@ -7,7 +7,8 @@ body {
 }
 
 @layer components {
-  .NavHover {
+  .NavHover,
+  .active-scroll-spy {
     @apply cursor-pointer rounded-full px-5 py-2 bg-[#f7af24];
   }
   .middleContainer {

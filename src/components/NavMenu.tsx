@@ -15,10 +15,11 @@ export default function NavMenu({param,title,Active,setActive}:Props) {
  
   return (
     <div onClick={(e)=>setActive(title)} className="">
-      <Link href={param}  className={`${title===Active && "NavHover"}`} scroll={false}>{title}</Link>
+      <Link href={`#${param}`} data-to-scrollspy-id={param}>{title}</Link>
     </div>
 
   )
 }
 
 // onClick={(e)=>setActive(!Active)}
+// className={`${title===Active && "NavHover"}`} 

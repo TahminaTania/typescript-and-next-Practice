@@ -4,12 +4,14 @@ import Services from "./Services"
 import { GetServerSideProps } from 'next';
 import Skill from "./Skill"
 import Latest from "./Latest"
+import Contact from "./Contact";
+import Footer from "@/components/Footer";
+import ScrollSpy from "react-ui-scrollspy"
 
 
 import fsPromises from 'fs/promises';
 import path from 'path'
-import Contact from "./Contact";
-import Footer from "@/components/Footer";
+;
 
 
 
@@ -18,12 +20,14 @@ export default function LandingPage({data,objectData}:IndexProps) {
   const skill = objectData.Skills;
   return (
     <main className="scroll-smooth">
+    <ScrollSpy>
      <Home/>
      <Services data={data}/>
      <Skill experiences={experiences} skill={skill}/>
      <Latest skill={skill}/>
      <Contact/>
      <Footer/>
+     </ScrollSpy>
     </main>
   )
 }

@@ -11,7 +11,7 @@ interface IndexProps{
 
 export default function Latest({skill}:IndexProps) {
   return (
-    <section className='py-[80px] bg-orange-50' id='Protfolio'>
+    <section className='py-[80px] bg-orange-50' id="fourth">
         <div className='container  mx-auto lg:px-[150px]'>
             <div className='font-[Rubik] tracking-widest md:text-start text-center'>
                 <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Portfolio.</span></h6>
