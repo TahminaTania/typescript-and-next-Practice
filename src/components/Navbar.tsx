@@ -20,7 +20,7 @@ export default function Navbar() {
                 <NavMenu title="Home" param="Home"  Active={Active} setActive={setActive} />
                 <NavMenu title="Services" param="Services"  Active={Active} setActive={setActive} />
                 <NavMenu title="Skill" param="Skill"  Active={Active} setActive={setActive} />
-                <NavMenu title="Protfolio" param="Protfolio"  Active={Active} setActive={setActive} />
+                <NavMenu title="Portfolio" param="Portfolio"  Active={Active} setActive={setActive} />
                 <NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive} />
         </div>
         <div className="">
@@ -40,7 +40,7 @@ export default function Navbar() {
                     <div className="ml-4 w-fit"><NavMenu title="Home" param="Home"  Active={Active} setActive={setActive}/></div>
                     <div className="ml-4 w-fit"><NavMenu title="Services" param="Services"  Active={Active} setActive={setActive}/></div>
                     <div className="ml-4 w-fit"> <NavMenu title="Skill" param="Skill"  Active={Active} setActive={setActive}/></div>
-                    <div className="ml-4 w-fit"><NavMenu title="Protfolio" param="Portfolio"  Active={Active} setActive={setActive} /></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Portfolio" param="Portfolio"  Active={Active} setActive={setActive} /></div>
                     <div className="ml-4 w-fit"><NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive}/></div>
             </div>
           </div>
