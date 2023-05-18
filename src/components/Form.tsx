@@ -1,7 +1,5 @@
 
-import React, { ChangeEvent, useEffect } from 'react'
-import Link from 'next/link';
-import { useState,FormEvent,FormEventHandler } from 'react'
+import { useState,FormEvent} from 'react'
 
 
 export default function Form() {
