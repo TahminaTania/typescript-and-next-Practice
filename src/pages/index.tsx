@@ -2,7 +2,7 @@ import Home from "./Home"
 import Services from "./Services"
 import { GetServerSideProps } from 'next';
 import Skill from "./Skill"
-import Latest from "./Latest"
+import Latest from "./Portfolio"
 import Contact from "./Contact";
 import Footer from "@/components/Footer";
 import ScrollSpy from "react-ui-scrollspy"
