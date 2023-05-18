@@ -20,7 +20,7 @@ export default function Navbar() {
                 <NavMenu title="Home" param="Home"  Active={Active} setActive={setActive} />
                 <NavMenu title="Services" param="Services"  Active={Active} setActive={setActive} />
                 <NavMenu title="Skill" param="Skill"  Active={Active} setActive={setActive} />
-                <NavMenu title="Protfolio" param="Latest"  Active={Active} setActive={setActive} />
+                <NavMenu title="Protfolio" param="Protfolio"  Active={Active} setActive={setActive} />
                 <NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive} />
         </div>
         <div className="">
@@ -37,11 +37,11 @@ export default function Navbar() {
 
           <div className= { MenuBar ? 'top-[100px] fixed w-full h-fit bg-gray-200 ease-in-out duration-500 md:hidden' : 'ease-in-out duration-500 fixed top-[-100%]  opacity-0'}>
             <div className="flex flex-col gap-5 uppercase text-md border-y-2 border-[#18171c] py-6">
-                    <div className="ml-4 w-fit"><NavMenu title="Home" param="first"  Active={Active} setActive={setActive}/></div>
-                    <div className="ml-4 w-fit"><NavMenu title="Services" param="second"  Active={Active} setActive={setActive}/></div>
-                    <div className="ml-4 w-fit"> <NavMenu title="SKill" param="third"  Active={Active} setActive={setActive}/></div>
-                    <div className="ml-4 w-fit"><NavMenu title="Protfolio" param="fourth"  Active={Active} setActive={setActive} /></div>
-                    <div className="ml-4 w-fit"><NavMenu title="Contact" param="fifth"  Active={Active} setActive={setActive}/></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Home" param="Home"  Active={Active} setActive={setActive}/></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Services" param="Services"  Active={Active} setActive={setActive}/></div>
+                    <div className="ml-4 w-fit"> <NavMenu title="Skill" param="Skill"  Active={Active} setActive={setActive}/></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Protfolio" param="Protfolio"  Active={Active} setActive={setActive} /></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive}/></div>
             </div>
           </div>
 
