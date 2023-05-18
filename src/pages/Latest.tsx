@@ -2,16 +2,16 @@ import {AiOutlineArrowRight} from 'react-icons/ai'
 
 interface IndexProps{
 
-    skill:{
+    latest:{
         id:number;
         title:string;
         icon:string
     }[];
   }
 
-export default function Latest({skill}:IndexProps) {
+export default function Latest({latest}:IndexProps) {
   return (
-    <section className='py-[80px] bg-orange-50' id="fourth">
+    <section className='py-[80px] bg-orange-50' id="Latest">
         <div className='container  mx-auto lg:px-[150px]'>
             <div className='font-[Rubik] tracking-widest md:text-start text-center'>
                 <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Portfolio.</span></h6>
@@ -19,7 +19,7 @@ export default function Latest({skill}:IndexProps) {
             </div>
             
             <div className='grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 gap-7 my-4 '>
-                {skill.map((item,index)=>{
+                {latest?.map((item,index)=>{
                     return(
                         <div key={index} className=''>
                             <div className='bg-white border-2 border-black'>

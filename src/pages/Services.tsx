@@ -15,7 +15,7 @@ interface Props{
 export default function Services({data}:Props) {
    
   return (
-    <section className='py-[80px] bg-orange-50' id="second">
+    <section className='py-[80px] bg-orange-50' id="Services">
         <div className='container  mx-auto md:px-[150px]'>
             <div className='font-[Rubik] tracking-widest md:text-start text-center'>
                 <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Services.</span></h6>

@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar"
 import Home from "./Home"
 import Services from "./Services"
 import { GetServerSideProps } from 'next';
@@ -20,6 +19,7 @@ import React from 'react'
 export default function LandingPage({data,objectData}:IndexProps) {
   const experiences = objectData.experince;
   const skill = objectData.Skills;
+  const latest = objectData.latest;
 
   return (
     <main className="scroll-smooth">
@@ -27,7 +27,7 @@ export default function LandingPage({data,objectData}:IndexProps) {
         <Home/>
         <Services data={data}/>
         <Skill experiences={experiences} skill={skill}/>
-        <Latest skill={skill}/>
+        <Latest latest={latest}/>
         <Contact/>
         <Footer/>
      </ScrollSpy>

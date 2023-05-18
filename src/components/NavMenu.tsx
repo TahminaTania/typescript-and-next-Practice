@@ -15,7 +15,7 @@ export default function NavMenu({param,title,Active,setActive}:Props) {
  
   return (
     <div onClick={(e)=>setActive(title)} className="">
-      <Link href={`#${param}`} data-to-scrollspy-id={param}>{title}</Link>
+      <Link href={`${param}`} data-to-scrollspy-id={param}>{title}</Link>
     </div>
 
   )

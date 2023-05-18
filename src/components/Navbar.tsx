@@ -17,11 +17,11 @@ export default function Navbar() {
       <div className="md:middleContainer hidden">
         <div className="flex items-center gap-10 left-0 uppercase text-md" >
                 <div className="text-2xl">BOSTON</div>
-                <NavMenu title="Home" param="first"  Active={Active} setActive={setActive} />
-                <NavMenu title="Services" param="second"  Active={Active} setActive={setActive} />
-                <NavMenu title="SKill" param="third"  Active={Active} setActive={setActive} />
-                <NavMenu title="Protfolio" param="fourth"  Active={Active} setActive={setActive} />
-                <NavMenu title="Contact" param="fifth"  Active={Active} setActive={setActive} />
+                <NavMenu title="Home" param="Home"  Active={Active} setActive={setActive} />
+                <NavMenu title="Services" param="Services"  Active={Active} setActive={setActive} />
+                <NavMenu title="Skill" param="Skill"  Active={Active} setActive={setActive} />
+                <NavMenu title="Protfolio" param="Latest"  Active={Active} setActive={setActive} />
+                <NavMenu title="Contact" param="Contact"  Active={Active} setActive={setActive} />
         </div>
         <div className="">
           <button className="text-[#18171c] bg-[#f7af24] py-[12px] px-[28px] text-[16px] border-2 border-[#18171c] font-bold">Contact Now</button>

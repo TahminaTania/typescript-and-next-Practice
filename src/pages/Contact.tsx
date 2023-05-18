@@ -7,7 +7,7 @@ export default function Contact() {
   
         
   return (
-    <section className='bg-gray-50' id="fifth">
+    <section className='bg-gray-50' id="Contact">
         <div className='container mx-auto pb-10  md:py-[105px] '>
         <div className='grid  grid-cols-1 md:grid-cols-2 font-sarif items-center'>
                 <div className='col-span-1 py-[100px] md:py-10 pr-10 md:text-start text-center'>

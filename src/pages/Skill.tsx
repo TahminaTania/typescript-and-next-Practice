@@ -33,7 +33,7 @@ function Skill({experiences,skill}:IndexProps) {
                             <h5 className='font-[800] py-5 text-[32px] md:text-[30px] '>My Skills</h5>
                             <div className="container mx-auto py-5">
                                 <div className="grid grid-cols-2">
-                                {skill.map(skill =>
+                                {skill?.map(skill =>
                                                 <div key={skill.id} className="m-3">
                                                         <div className='border-2 border-black flex items-center gap-7 p-3'><span className="w-[50px] h-[50px] bg-[#5c64cf] rounded-full flex items-center justify-center"><AiFillHtml5 size={32} className="text-white "/></span><p className="whitespace-nowrap font-[500] py-3 text-[15px] md:text-[20px]">{skill.title}</p></div>
                                                 </div>
@@ -48,7 +48,7 @@ function Skill({experiences,skill}:IndexProps) {
                 <div className="my-auto">
                     <h5 className='font-[800] py-5 text-[32px] md:text-[30px]'>Experiences</h5>
                     <div className="container mx-auto py-5">
-                         {experiences.map(post =>
+                         {experiences?.map(post =>
                                 <div key={post.id}>
                                     <div className="border-t-2 border-black grid grid-cols-2 py-3">
                                        <h6 className="text-[15px] font-bold">Jan 2021 - Present</h6>

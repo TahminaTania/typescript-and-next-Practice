@@ -57,5 +57,37 @@
             "title":"App Dev",
             "icon": "AiFillHtml5"
         }
+    ],
+    "latest": [
+        {
+            "id": 1,
+            "title":"Html",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 2,
+            "title":"Css",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 3,
+            "title":"ReactJS",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 4,
+            "title":"NextJS",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 5,
+            "title":"iOS App",
+            "icon": "AiFillHtml5"
+        },
+        {
+            "id": 6,
+            "title":"App Dev",
+            "icon": "AiFillHtml5"
+        }
     ]
 }
