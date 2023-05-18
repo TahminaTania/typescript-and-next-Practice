@@ -40,7 +40,7 @@ export default function Navbar() {
                     <div className="ml-4 w-fit"><NavMenu title="Home" param="first"  Active={Active} setActive={setActive}/></div>
                     <div className="ml-4 w-fit"><NavMenu title="Services" param="second"  Active={Active} setActive={setActive}/></div>
                     <div className="ml-4 w-fit"> <NavMenu title="SKill" param="third"  Active={Active} setActive={setActive}/></div>
-                    <div className="ml-4 w-fit"><NavMenu title="Protfolio" param="forth"  Active={Active} setActive={setActive} /></div>
+                    <div className="ml-4 w-fit"><NavMenu title="Protfolio" param="fourth"  Active={Active} setActive={setActive} /></div>
                     <div className="ml-4 w-fit"><NavMenu title="Contact" param="fifth"  Active={Active} setActive={setActive}/></div>
             </div>
           </div>

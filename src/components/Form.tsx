@@ -1,27 +1,37 @@
-"use client";
 
+import React, { ChangeEvent } from 'react'
 import Link from 'next/link';
-import { useState } from 'react'
+import { useState,FormEvent,FormEventHandler } from 'react'
+
+interface FormProps {
+    onSubmit: (data:FormData) => void;
+  }
+  
+interface FormData {
+    username: string;
+    email: string;
+    subject: string;
+    message: any;
+}
 
 
-export default function Form() {
+export default function Form({onSubmit}: FormProps) {
 
-    const [inputs, setInputs] = useState<{}>({});
+    const [inputs, setInputs] = useState<FormData>({ username: '', email: '', subject:'' ,message: '', });
 
-    const handleChange = (event:React.ChangeEvent<HTMLInputElement>) => {
-        const Byname = event.target.name;
-        const Byvalue = event.target.value;
-        setInputs(values => ({...values, [Byname]: Byvalue}))
+    const handleChange = (event:ChangeEvent<HTMLInputElement>) => {
+        const {name,value} = event.target
+        // const Byvalue = event.target.value;
+        setInputs({...inputs,[name]:value})
     }
         
-const handleSubmit = (event:React.FormEvent<HTMLFormElement>) => {
+const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setInputs("")
+    onSubmit(inputs)
     
 }
-console.log(inputs)
+// console.log(inputs,'inputs Now')
 
-// console.log(inputs, "inputs now")
 
         return (
             <div>
@@ -73,13 +83,14 @@ console.log(inputs)
                             <section>
                                     <label className=' text-gray-600'>Your Message</label>
                                     <div className="flex items-center border border-gray-900 py-2 px-3 my-2">
-                                        <textarea className="pl-2 outline-none border-none" 
-                                            rows="4" 
-                                            name="Message"
+                                        <input className="pl-2 outline-none border-none h-[100px]" 
+                                            // rows="4" 
+                                            name="message"
                                             placeholder="Email*" 
-                                            value={inputs.Message || ""} 
+                                            value={inputs.message || ""} 
                                             onChange={handleChange}
-                                        ></textarea>
+                                             //textarea and rows don't work herewith typescript  for unkown reason that's why using input with padding
+                                        ></input>
                                     </div>
                             </section>
 
@@ -88,7 +99,7 @@ console.log(inputs)
 
 
                         <div className="pt-8">
-                           <button className="text-[#18171c] bg-[#f7af24] py-[12px] px-[28px] text-[16px] border-2 border-[#18171c] font-bold">Send Message</button>
+                           <button type="submit" className="text-[#18171c] bg-[#f7af24] py-[12px] px-[28px] text-[16px] border-2 border-[#18171c] font-bold">Send Message</button>
                         </div>
                         
                     </form>

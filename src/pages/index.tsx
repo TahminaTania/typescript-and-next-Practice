@@ -10,23 +10,26 @@ import ScrollSpy from "react-ui-scrollspy"
 
 
 import fsPromises from 'fs/promises';
-import path from 'path'
-;
+import path from 'path';
+import React from 'react'
 
 
+      
+ 
 
 export default function LandingPage({data,objectData}:IndexProps) {
   const experiences = objectData.experince;
   const skill = objectData.Skills;
+
   return (
     <main className="scroll-smooth">
     <ScrollSpy>
-     <Home/>
-     <Services data={data}/>
-     <Skill experiences={experiences} skill={skill}/>
-     <Latest skill={skill}/>
-     <Contact/>
-     <Footer/>
+        <Home/>
+        <Services data={data}/>
+        <Skill experiences={experiences} skill={skill}/>
+        <Latest skill={skill}/>
+        <Contact/>
+        <Footer/>
      </ScrollSpy>
     </main>
   )
