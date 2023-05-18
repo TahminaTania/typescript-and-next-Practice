@@ -4,9 +4,7 @@ import {IoLocationSharp} from 'react-icons/io5'
 
 export default function Contact() {
   
-    function handleSubmitt(formData: FormData) {
-        // console.log(formData); 
-    }
+  
         
   return (
     <section className='bg-gray-50' id="fifth">
@@ -15,7 +13,7 @@ export default function Contact() {
                 <div className='col-span-1 py-[100px] md:py-10 pr-10 md:text-start text-center'>
                     <h6 className=' mb-[30px] ml-[-10px]'><span className='inline-block border-[1px] border-[#5c64cf] px-[20px] py-[8px] text-[#5c64cf] md:rotate-[-35deg]'>Contact.</span></h6>
                     <h1 className=' inline md:text-[55px] leading-tight text-[43px] pb-[p5px] font-[800] text-[#18171c]'>Let's Discuss Project</h1>
-                   <div className='py-10'><Form onSubmit={handleSubmitt}/></div>
+                   <div className='py-10'><Form/></div>
                 </div>
 
                 <div className='mx-auto'>
